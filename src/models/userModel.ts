@@ -29,10 +29,10 @@ const userSchema = new Schema({
     type: String,
     enum: ['Admin', 'Student', 'Visitor']
   },
-  uniqueID: {
-    type: String,
-    required: true
-  }
+  // uniqueID: {
+  //   type: String,
+  //   required: true
+  // }
 }, {
   timestamps: true,
 });

@@ -3,7 +3,7 @@ import { ChangeEvent, FormEvent, useState } from "react";
 
 import axios from "axios";
 // import { Link } from "react-router-dom";
-import styles from "./styles.module.css";
+
 // import logo from "../../images/logo.png";
 // import { useNavigate } from "react-router-dom";
 import Image from "next/image";
@@ -126,8 +126,8 @@ const Login = () => {
               required
               className="border-2 px-2 py-3 rounded-md"
             />
-            {error && <div className={styles.error_msg}>{error}</div>}
-            {msg && <div className={styles.success_msg}>{msg}</div>}
+            {/* {error && <div className={styles.error_msg}>{error}</div>}
+            {msg && <div className={styles.success_msg}>{msg}</div>} */}
             <p className="text-blue-600 text-sm font-semibold">
               Forgot password?
             </p>

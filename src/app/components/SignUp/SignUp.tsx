@@ -8,7 +8,6 @@ import {
 } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import styles from "./styles.module.css";
 
 import Image from "next/image";
 import context from "../context";
@@ -23,7 +22,7 @@ type Mail = {
 const Signup = () => {
   let [email, setEmail] = useContext(context);
   const route = useRouter();
-  const [data, setData] = useState({
+  const [userData, setData] = useState({
     fullName: "",
     companyName: "",
     email: "",
@@ -33,21 +32,20 @@ const Signup = () => {
     confirmPassword: "",
   });
   const [error, setError] = useState("");
-  const [msg, setMsg] = useState("");
+  // const [msg, setMsg] = useState("");
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setData({ ...data, [e.target.name]: e.target.value });
+    setData({ ...userData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      // setEmail(data.email);
+      // setEmail(userData.email);
       const url = "http://localhost:3000/api/send";
-      const { data: res } = await axios.post(url, data);
+      const { data: res } = await axios.post(url, userData);
       console.log("signup data", res);
       // setMsg(res.verify_otp);
-      sessionStorage.setItem("otp_code", res.verify_otp);
 
       // await connectDB();
       // const fine_data = {
@@ -78,11 +76,11 @@ const Signup = () => {
       }
     }
   };
-  console.log("sigun", msg);
+  // console.log("sigun", msg);
   return (
     <div className="w-[100vw] min-h-screen m-auto flex flex-col justify-center">
       <div className="flex gap-5">
-        <div className="w-[50%] ml-16 border-4 border-blue-600">
+        <div className="w-[50%] ml-16">
           <h2 className="font-bold text-3xl ml-14 text-stone-800">
             Hi, Welcome Back
           </h2>
@@ -94,7 +92,7 @@ const Signup = () => {
             height={500}
           />
         </div>
-        <div className=" w-[50%] ml-20 text-start items-center border-4 border-red-600 ">
+        <div className=" w-[50%] ml-20 text-start items-center ">
           <form
             className=" flex flex-col h-[100%] justify-center gap-3 w-[30rem]"
             onSubmit={handleSubmit}
@@ -112,7 +110,7 @@ const Signup = () => {
                 placeholder="Full Name"
                 name="fullName"
                 onChange={handleChange}
-                value={data.fullName}
+                value={userData.fullName}
                 required
                 className="border-2 px-2 py-3 rounded-md"
               />
@@ -121,7 +119,7 @@ const Signup = () => {
                 placeholder="Company Name"
                 name="companyName"
                 onChange={handleChange}
-                value={data.companyName}
+                value={userData.companyName}
                 required
                 className="border-2 px-2 py-3 rounded-md"
               />
@@ -132,7 +130,7 @@ const Signup = () => {
                 placeholder="Email address"
                 name="email"
                 onChange={handleChange}
-                value={data.email}
+                value={userData.email}
                 required
                 className="border-2 px-2 py-3 rounded-md"
               />
@@ -141,7 +139,7 @@ const Signup = () => {
                 placeholder="Role/Title"
                 name="role"
                 onChange={handleChange}
-                value={data.role}
+                value={userData.role}
                 required
                 className="border-2 px-2 py-3 rounded-md"
               />
@@ -152,7 +150,7 @@ const Signup = () => {
                 placeholder="Department"
                 name="department"
                 onChange={handleChange}
-                value={data.department}
+                value={userData.department}
                 required
                 className="border-2 px-2 py-3 rounded-md"
               />
@@ -161,7 +159,7 @@ const Signup = () => {
                 placeholder="Password"
                 name="password"
                 onChange={handleChange}
-                value={data.password}
+                value={userData.password}
                 required
                 className="border-2 px-2 py-3 rounded-md"
               />
@@ -170,12 +168,12 @@ const Signup = () => {
                 placeholder="Confirm Password"
                 name="confirmPassword"
                 onChange={handleChange}
-                value={data.confirmPassword}
+                value={userData.confirmPassword}
                 required
                 className="border-2 px-2 py-3 rounded-md col-span-2"
               />
-              {error && <div className={styles.error_msg}>{error}</div>}
-              {msg && <div className={styles.success_msg}>{msg}</div>}
+              {/* {error && <div className={styles.error_msg}>{error}</div>} */}
+              {/* {msg && <div className={styles.success_msg}>{msg}</div>} */}
               <button
                 type="submit"
                 className="bg-blue-600 text-zinc-100 font-semibold px-2 py-3 rounded-md col-span-2"

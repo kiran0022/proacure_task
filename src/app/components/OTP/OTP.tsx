@@ -1,5 +1,5 @@
 "use client";
-import styles from "./styles.module.css";
+
 import user from "../../images/user.png";
 import OtpInput from "react-otp-input";
 import { useState, useContext } from "react";
