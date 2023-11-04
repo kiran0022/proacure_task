@@ -10,7 +10,7 @@ const Dashboard = () => {
 
   return (
     <div className={styles.main_container}>
-      <FaCircleUser className="text-7xl text-neutral-700" />
+      <FaCircleUser className="text-8xl text-neutral-700" />
       <h1 className="text-5xl font-semibold mt-10">Hi you are logged in!!</h1>
     </div>
   );
