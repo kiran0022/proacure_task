@@ -5,13 +5,15 @@
 
 ![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20092012.png)
 
+![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20093023.png)
+
+![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20093053.png)
+
 ![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20092135.png)
 
 ![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20092427.png)
 
-![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20093023.png)
 
-![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20093053.png)
 
 
 ## Getting Started
