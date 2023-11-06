@@ -3,6 +3,10 @@
 ## TailwindCSS  --> Styling
 ## MongoDB      --> User details
 
+https://github.com/kiran0022/proacure_task/assets/68956041/49ce74dc-781d-4c71-8521-1a2273a8f22d
+
+
+
 ![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20092012.png)
 
 ![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20093023.png)
@@ -12,6 +16,8 @@
 ![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20092135.png)
 
 ![](https://github.com/kiran0022/proacure_task/blob/proacure/public/Screenshot%202023-11-04%20092427.png)
+
+
 
 
 
